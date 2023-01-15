@@ -41,13 +41,13 @@ public class User implements UserDetails {
 
     @NotEmpty
     @Size(min = 12, message = "The password length must be at least 12 chars!")
-    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
 
-    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
-    private final String authorities = "ROLE_USER";
+    @JsonProperty(value = "roles")
+    private String authorities;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    @OneToMany
+    @JoinColumn(name = "user_id", nullable = false)
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private List<Payment> payments = new ArrayList<>();
 

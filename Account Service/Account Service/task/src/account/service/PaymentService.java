@@ -39,10 +39,13 @@ public class PaymentService {
                 throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Record already created");
             }
 
-            User user = userRepository.findUserByUsernameIgnoreCase(payment.getEmail())
+            userRepository
+                    .findUserByUsernameIgnoreCase(payment.getEmail())
+                    .map(user -> {
+                        user.getPayments().add(payment);
+                        return paymentRepository.save(payment);
+                    })
                     .orElseThrow(() -> new UsernameNotFoundException("User not found"));
-            payment.setUser(user);
-            paymentRepository.save(payment);
         }
 
         return new ErrorResponse("Added successfully!");
@@ -50,8 +53,10 @@ public class PaymentService {
 
     @Transactional
     public ErrorResponse updatePayments(Payment newPayment) {
-            Payment oldPayment = paymentRepository.findByEmailIgnoreCaseAndPeriod(newPayment.getEmail(), newPayment.getPeriod())
+            Payment oldPayment = paymentRepository
+                    .findByEmailIgnoreCaseAndPeriod(newPayment.getEmail(), newPayment.getPeriod())
                     .orElseThrow(() -> new ResponseStatusException(HttpStatus.BAD_REQUEST, "Record with the specified period not found"));
+
             oldPayment.setSalary(newPayment.getSalary());
             paymentRepository.save(oldPayment);
 
@@ -77,11 +82,12 @@ public class PaymentService {
         Payment payment = paymentRepository.findByEmailIgnoreCaseAndPeriod(user.getUsername(), period)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.BAD_REQUEST, "Record with the specified period not found"));
 
-        return new EmployeeDTO(
-                user.getName(),
-                user.getLastName(),
-                payment.getPeriod(),
-                String.format("%d dollar(s) %d cent(s)", payment.getSalary() / 100, payment.getSalary() % 100)
-        );
+        return EmployeeDTO
+                .builder()
+                .name(user.getName())
+                .lastname(user.getLastName())
+                .period(payment.getPeriod())
+                .salary(String.format("%d dollar(s) %d cent(s)", payment.getSalary() / 100, payment.getSalary() % 100))
+                .build();
     }
 }

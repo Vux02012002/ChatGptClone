@@ -27,10 +27,6 @@ public class Payment {
     @JsonProperty("employee")
     private String email;
 
-    @ManyToOne
-    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
-    private User user;
-
     @JsonFormat(pattern = "MM-yyyy")
     private YearMonth period;
 

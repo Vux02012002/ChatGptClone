@@ -5,6 +5,7 @@ import account.entity.Payment;
 import account.service.PaymentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -22,11 +23,13 @@ public class AccountantController {
         this.paymentService = paymentService;
     }
 
+    @PreAuthorize("hasRole('ACCOUNTANT')")
     @PostMapping(value = "/payments", consumes = MediaType.APPLICATION_JSON_VALUE)
     public ErrorResponse addPayments(@RequestBody List<@Valid Payment> payments) {
         return paymentService.addPayments(payments);
     }
 
+    @PreAuthorize("hasRole('ACCOUNTANT')")
     @PutMapping(value = "/payments", consumes = MediaType.APPLICATION_JSON_VALUE)
     public ErrorResponse updatePayments(@RequestBody @Valid Payment payment) {
         return paymentService.updatePayments(payment);

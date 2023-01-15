@@ -1648,6 +1648,27 @@ files:
         }
     }
   learner_created: true
+- name: src/account/controller/AdministratorController.java
+  visible: true
+  learner_created: true
+- name: src/account/model/SuccessStatus.java
+  visible: true
+  learner_created: true
+- name: src/account/model/UserUpdatedRoleResponse.java
+  visible: true
+  learner_created: true
+- name: src/account/config/MethodSecurityConfig.java
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/learn/step/16605#comment
-status: Unchecked
-record: -1
+status: Failed
+feedback:
+  message: |-
+    Wrong answer in test #12
+
+    POST /api/auth/signup should respond with status code 200, responded: 500
+
+    Response body:
+    &lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;
+  time: "Sun, 15 Jan 2023 11:59:40 UTC"
+record: 5

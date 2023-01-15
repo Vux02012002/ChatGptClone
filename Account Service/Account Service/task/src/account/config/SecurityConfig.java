@@ -42,8 +42,8 @@ public class SecurityConfig {
                 .headers().frameOptions().disable()
                 .and()
                 .authorizeHttpRequests(authorize -> authorize
-                        .mvcMatchers("/api/empl/payment", "/api/auth/changepass").authenticated()
-                        .mvcMatchers("/api/auth/signup", "/api/acct/payments", "/**").permitAll()
+                        .antMatchers("/api/empl/payment", "/api/auth/changepass").authenticated()
+                        .antMatchers("/api/auth/signup", "/api/acct/payments", "/**").permitAll()
                 )
                 .httpBasic(Customizer.withDefaults())
                 .formLogin(Customizer.withDefaults())

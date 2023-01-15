@@ -1,10 +1,13 @@
 package account.service;
 
 import account.entity.User;
+import account.model.SuccessStatus;
+import account.model.UserUpdatedRoleResponse;
 import account.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -32,6 +35,7 @@ public class UserService implements UserDetailsService {
         if (userRepository.existsUserByUsernameIgnoreCase(user.getUsername())) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "User exist!");
         }
+
         user.setPassword(encoder.encode(user.getPassword()));
         return userRepository.save(user);
     }
@@ -49,7 +53,7 @@ public class UserService implements UserDetailsService {
         return hackerPasswords.contains(password);
     }
 
-    public ResponseEntity<String> changePassword(String newPassword, User user) {
+    public ResponseEntity<SuccessStatus> changePassword(String newPassword, User user) {
 
         if (isPasswordInHackerDatabase(newPassword)) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "The password is in the hacker's database!");
@@ -60,11 +64,42 @@ public class UserService implements UserDetailsService {
         user.setPassword(encoder.encode(newPassword));
         userRepository.save(user);
 
-        String body = String.format("""
-                {
-                   "email": "%s",
-                   "status": "The password has been updated successfully"
-                }""", user.getUsername().toLowerCase());
-        return ResponseEntity.ok(body);
+        return ResponseEntity.ok(new SuccessStatus(user.getUsername().toLowerCase(), "Updated successfully!"));
+    }
+
+    public List<User> getUsers() {
+        return userRepository.findAllByOrderByIdAsc();
+    }
+
+    public SuccessStatus deleteUser(String email) {
+        User user = userRepository
+                .findUserByUsernameIgnoreCase(email)
+                .orElseThrow(() -> new UsernameNotFoundException("User not found!"));
+
+        if (user.getAuthorities().contains(new SimpleGrantedAuthority("ADMINISTRATOR"))) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Can't remove ADMINISTRATOR role!");
+        }
+
+        userRepository.delete(user);
+        return new SuccessStatus(email, "Deleted successfully!");
+    }
+
+
+    public User updateRole(UserUpdatedRoleResponse userUpdatedRole) {
+        User user = userRepository
+                .findUserByUsernameIgnoreCase(userUpdatedRole.getUser())
+                .orElseThrow(() -> new UsernameNotFoundException("User not found"));
+
+        if (userUpdatedRole.getOperation().equals("GRANT")) {
+            user.setAuthorities(userUpdatedRole.getRole());
+        } else if (userUpdatedRole.getOperation().equals("REMOVE")) {
+            if (!user.getAuthorities().contains(new SimpleGrantedAuthority(userUpdatedRole.getRole()))) {
+                throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "The user does not have a role!");
+            }
+
+            user.getAuthorities().remove(new SimpleGrantedAuthority(userUpdatedRole.getRole()));
+        }
+
+        return userRepository.save(user);
     }
 }
