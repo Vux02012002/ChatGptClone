@@ -2,11 +2,9 @@ package account.service;
 
 import account.repository.GroupRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 import account.entity.Group;
-import org.springframework.web.server.ResponseStatusException;
 
 @Service
 public class GroupService {

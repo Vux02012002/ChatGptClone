@@ -28,6 +28,7 @@ public class CustomAccessDeniedHandler implements AccessDeniedHandler {
                 "Access Denied!",
                 request.getServletPath()
         );
+
         ServletOutputStream out = response.getOutputStream();
         new ObjectMapper().writeValue(out, errorDTO);
         out.flush();

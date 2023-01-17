@@ -5,149 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0eac5dbc-8c5a-4a63-a000-4d65709d2256" name="Changes" comment="init commit">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/classes/java/main/account/config/MethodSecurityConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/classes/java/main/account/entity/Group.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/classes/java/main/account/exception/CustomAccessDeniedHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/classes/java/main/account/model/Operation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/classes/java/main/account/repository/GroupRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/classes/java/main/account/service/GroupService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_10035615310127667563_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_10086850354537757489_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_10135337941331876517_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_1041153544043670402_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_10626330466205467812_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_1067088725244076343_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_10697818587226736193_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_10853790064127434638_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_11009295434322934132_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_11034059220209154438_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_11534896054094730194_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_11575914559322531400_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_1169024366612348193_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_1178270981243419800_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_11950550130250548637_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_12180078670637955158_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_12184866035674251303_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_1228988850211088170_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_12812423744016996217_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_128666723991014447_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_1309827656840759361_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_13203083057224789678_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_13412561693168883036_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_13515440806865971331_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_13554342107161200202_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_13706627766207588789_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_13767506759233522010_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_13800082782972873143_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_13899621676593378596_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_14126748530082920599_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_14345850308515587346_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_14361601624586663089_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_14524010403268804210_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_14644865959381501517_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_15451150488980578841_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_15536814920066627847_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_15770499998254188842_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_15883680323888665450_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_15920432003085570705_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_15993079031578170045_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_16063134059383026284_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_16229129083737087792_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_16275261320462704346_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_17007593660245788020_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_17196863849296082146_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_17266862360479381117_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_1763889833738668492_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_17816130638171998622_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_18019952938690782433_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_18021970464564113383_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_18313791252875674896_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_1962094745870983458_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_2234354247832649379_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_234577758377397331_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_2396552871326765359_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_2428689158368676337_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_2651087637569630933_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_2933127452775065430_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_2961316407418614162_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_3061390821804853723_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_3269555597112039511_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_3313181494139102483_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_3539841116420226312_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_3563238828155156710_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_3588644594995942415_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_4114635559239400673_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_4154872517430848908_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_4222922951262968988_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_4249790841956573180_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_4459430712482528359_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_5156499964502103624_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_5197717413877620247_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_523311452851854642_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_529908674772703092_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_5516792583272432722_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_5636828218001735878_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_5721832731835995571_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_5751953524016572516_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_600829216792720823_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_6125182576385449785_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_618775177839220249_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_639432272024598402_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_6399117117561576863_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_665972189691661570_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_6867689652616256035_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_687838805977196455_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_7163500598614963543_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_7226148899788165668_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_7339630037484000950_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_7524178377493212299_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_7916541169436153640_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_847157115667662494_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_8497224171274305210_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_8651910194321355968_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_8689023005321608877_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_8876583702010616573_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_9090191449379950024_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_9240438288356460396_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_9407079856380440216_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_9438253640864405042_tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/src/account/entity/Group.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/src/account/exception/CustomAccessDeniedHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/src/account/model/Operation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/src/account/repository/GroupRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Account Service/task/src/account/service/GroupService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_2051100987549139442_tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_2527169195026067389_tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_3588416463662666455_tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_4280338032512223440_tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_6191283076313653226_tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_6333161936921438513_tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_7488730022900418728_tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/test/jar_extract_7774984938487487828_tmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Account Service/Logging events/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Account Service/Logging events/task-info.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Account Service/The authorization/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Account Service/The authorization/task-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Account Service/service_db.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/Account Service/service_db.trace.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Account Service/task/build/classes/java/main/account/config/BeanConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/Account Service/task/build/classes/java/main/account/config/BeanConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Account Service/task/build/classes/java/main/account/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/Account Service/task/build/classes/java/main/account/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Account Service/lesson-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Account Service/lesson-info.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Account Service/task/build/classes/java/main/account/controller/AccountantController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Account Service/task/build/classes/java/main/account/controller/AccountantController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Account Service/task/build/classes/java/main/account/controller/AdministratorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Account Service/task/build/classes/java/main/account/controller/AdministratorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Account Service/task/build/classes/java/main/account/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Account Service/task/build/classes/java/main/account/controller/AuthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Account Service/task/build/classes/java/main/account/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/Account Service/task/build/classes/java/main/account/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Account Service/task/build/classes/java/main/account/exception/ControllerExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/Account Service/task/build/classes/java/main/account/exception/ControllerExceptionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Account Service/task/build/classes/java/main/account/model/UserUpdatedRoleResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/Account Service/task/build/classes/java/main/account/model/UserUpdatedRoleResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Account Service/task/build/classes/java/main/account/service/PaymentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Account Service/task/build/classes/java/main/account/service/PaymentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Account Service/task/build/classes/java/main/account/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Account Service/task/build/classes/java/main/account/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Account Service/task/build/classes/java/main/account/controller/EmployeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Account Service/task/build/classes/java/main/account/controller/EmployeeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Account Service/task/build/classes/java/main/account/exception/CustomAccessDeniedHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/Account Service/task/build/classes/java/main/account/exception/CustomAccessDeniedHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Account Service/task/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/Account Service/task/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Account Service/task/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Account Service/task/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Account Service/task/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Account Service/task/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Account Service/task/src/account/config/BeanConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Account Service/task/src/account/config/BeanConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Account Service/task/src/account/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Account Service/task/src/account/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Account Service/task/src/account/controller/AccountantController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Account Service/task/src/account/controller/AccountantController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Account Service/task/src/account/controller/AdministratorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Account Service/task/src/account/controller/AdministratorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Account Service/task/src/account/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Account Service/task/src/account/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Account Service/task/src/account/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Account Service/task/src/account/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Account Service/task/src/account/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Account Service/task/src/account/controller/EmployeeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Account Service/task/src/account/exception/ControllerExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Account Service/task/src/account/exception/ControllerExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Account Service/task/src/account/model/UserUpdatedRoleResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Account Service/task/src/account/model/UserUpdatedRoleResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Account Service/task/src/account/exception/CustomAccessDeniedHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Account Service/task/src/account/exception/CustomAccessDeniedHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Account Service/task/src/account/service/GroupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Account Service/task/src/account/service/GroupService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Account Service/task/src/account/service/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Account Service/task/src/account/service/PaymentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Account Service/task/src/account/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Account Service/task/src/account/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../service_db.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/../service_db.trace.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -333,7 +219,7 @@
       <workItem from="1673849344946" duration="2000" />
       <workItem from="1673880534458" duration="3023000" />
       <workItem from="1673927858004" duration="8878000" />
-      <workItem from="1673956676504" duration="1955000" />
+      <workItem from="1673956676504" duration="2621000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1673589421177</created>
@@ -349,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673784373785</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="init commit">
+      <created>1673958684852</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673958684852</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

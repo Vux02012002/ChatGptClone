@@ -27,7 +27,6 @@ public class EmployeeController {
         this.paymentService = paymentService;
     }
 
-    @PreAuthorize("hasRole('USER') or hasRole('ACCOUNTANT')")
     @GetMapping(value = "/payment", produces = MediaType.APPLICATION_JSON_VALUE)
     public Object getPayment(@RequestParam(required = false) @DateTimeFormat(pattern = "MM-yyyy") Calendar period, @AuthenticationPrincipal User user) {
         if (period == null) {
