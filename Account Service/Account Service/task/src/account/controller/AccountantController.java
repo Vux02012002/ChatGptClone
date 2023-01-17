@@ -25,13 +25,13 @@ public class AccountantController {
 
     @PreAuthorize("hasRole('ACCOUNTANT')")
     @PostMapping(value = "/payments", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ErrorResponse addPayments(@RequestBody List<@Valid Payment> payments) {
+    public ErrorResponse addPayments(@RequestBody(required = false) List<@Valid Payment> payments) {
         return paymentService.addPayments(payments);
     }
 
     @PreAuthorize("hasRole('ACCOUNTANT')")
     @PutMapping(value = "/payments", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ErrorResponse updatePayments(@RequestBody @Valid Payment payment) {
+    public ErrorResponse updatePayments(@RequestBody(required = false) @Valid Payment payment) {
         return paymentService.updatePayments(payment);
     }
 }

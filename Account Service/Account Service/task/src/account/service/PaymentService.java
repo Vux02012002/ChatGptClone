@@ -45,7 +45,7 @@ public class PaymentService {
                         user.getPayments().add(payment);
                         return paymentRepository.save(payment);
                     })
-                    .orElseThrow(() -> new UsernameNotFoundException("User not found"));
+                    .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "User not found!"));
         }
 
         return new ErrorResponse("Added successfully!");

@@ -10,5 +10,5 @@ import lombok.NoArgsConstructor;
 public class UserUpdatedRoleResponse {
     private String user;
     private String role;
-    private String operation;
+    private Operation operation;
 }

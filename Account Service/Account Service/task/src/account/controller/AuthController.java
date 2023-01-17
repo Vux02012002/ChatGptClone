@@ -31,9 +31,8 @@ public class AuthController {
         return userService.addUser(user);
     }
 
-    @PreAuthorize("hasRole('ADMINISTRATOR') or hasRole('USER') or hasRole('ACCOUNTANT')")
     @PostMapping(value = "/changepass", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<SuccessStatus> changePassword(
+    public ResponseEntity<String> changePassword(
             @RequestBody @Valid PasswordDTO passwordDTO,
             @AuthenticationPrincipal User user
     ) {

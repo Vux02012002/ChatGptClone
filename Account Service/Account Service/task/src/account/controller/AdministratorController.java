@@ -22,21 +22,18 @@ public class AdministratorController {
         this.userService = userService;
     }
 
-    @PreAuthorize("hasRole('ADMINISTRATOR')")
     @GetMapping(value ="/user", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<User> getUsers() {
         return userService.getUsers();
     }
 
-    @PreAuthorize("hasRole('ADMINISTRATOR')")
-    @DeleteMapping(value = "user/{email}", consumes = MediaType.APPLICATION_JSON_VALUE)
+    @DeleteMapping(value = "user/{email}")
     public SuccessStatus deleteUser(@PathVariable String email) {
         return userService.deleteUser(email);
     }
 
-    @PreAuthorize("hasRole('ADMINISTRATOR')")
     @PutMapping(value = "/user/role", consumes = MediaType.APPLICATION_JSON_VALUE)
     public User updateRole(@RequestBody @Valid UserUpdatedRoleResponse userUpdatedRole) {
-        return userService.updateRole(userUpdatedRole);
+        return userService.updateGroup(userUpdatedRole);
     }
 }

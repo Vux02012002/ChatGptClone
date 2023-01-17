@@ -540,3 +540,39 @@ Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:510)
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
 	... 55 more
+2023-01-16 11:24:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]group (id bigint not null, code varchar(255) not null, name varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table group (id bigint not null, code varchar(255) not null, name varchar(255), primary key (id)) [42001-214]
+2023-01-16 11:24:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]group drop constraint if exists UK_8t3cu9bjokt0sgfo48xxa87pu"; expected "identifier"; SQL statement:
+alter table group drop constraint if exists UK_8t3cu9bjokt0sgfo48xxa87pu [42001-214]
+2023-01-16 11:24:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]group add constraint UK_8t3cu9bjokt0sgfo48xxa87pu unique (code)"; expected "identifier"; SQL statement:
+alter table group add constraint UK_8t3cu9bjokt0sgfo48xxa87pu unique (code) [42001-214]
+2023-01-16 11:24:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table user_groups add constraint FKhhrfi7x3ydm11iofjkhvw0jh7 foreign key (group_id) references [*]group"; expected "identifier"; SQL statement:
+alter table user_groups add constraint FKhhrfi7x3ydm11iofjkhvw0jh7 foreign key (group_id) references group [42001-214]
+2023-01-16 11:24:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "insert into [*]group (code, name, id) values (?, ?, ?)"; expected "identifier"; SQL statement:
+insert into group (code, name, id) values (?, ?, ?) [42001-214]
+2023-01-16 11:25:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]group (id bigint not null, code varchar(255) not null, name varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table group (id bigint not null, code varchar(255) not null, name varchar(255), primary key (id)) [42001-214]
+2023-01-16 11:25:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]group drop constraint if exists UK_8t3cu9bjokt0sgfo48xxa87pu"; expected "identifier"; SQL statement:
+alter table group drop constraint if exists UK_8t3cu9bjokt0sgfo48xxa87pu [42001-214]
+2023-01-16 11:25:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]group add constraint UK_8t3cu9bjokt0sgfo48xxa87pu unique (code)"; expected "identifier"; SQL statement:
+alter table group add constraint UK_8t3cu9bjokt0sgfo48xxa87pu unique (code) [42001-214]
+2023-01-16 11:25:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table user_groups add constraint FKhhrfi7x3ydm11iofjkhvw0jh7 foreign key (group_id) references [*]group"; expected "identifier"; SQL statement:
+alter table user_groups add constraint FKhhrfi7x3ydm11iofjkhvw0jh7 foreign key (group_id) references group [42001-214]
+2023-01-16 11:26:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "insert into [*]group (code, name, id) values (?, ?, ?)"; expected "identifier"; SQL statement:
+insert into group (code, name, id) values (?, ?, ?) [42001-214]
+2023-01-16 12:30:55 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DELETE [*]TABLE ""GROUPS"""; expected "identifier"; SQL statement:
+DELETE TABLE "GROUPS" [42001-214]
+2023-01-16 12:31:04 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DELETE [*]TABLE GROUPS"; expected "identifier"; SQL statement:
+DELETE TABLE GROUPS [42001-214]

@@ -2,22 +2,21 @@ package account.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import com.fasterxml.jackson.annotation.JsonUnwrapped;
+import lombok.*;
+import org.hibernate.annotations.SortNatural;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
 import javax.validation.constraints.*;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
+import java.util.*;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
+@Getter
+@Setter
 @Entity
 @Table(name = "users")
 public class User implements UserDetails {
@@ -41,19 +40,49 @@ public class User implements UserDetails {
 
     @NotEmpty
     @Size(min = 12, message = "The password length must be at least 12 chars!")
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
-
-    @JsonProperty(value = "roles")
-    private String authorities;
 
     @OneToMany
     @JoinColumn(name = "user_id", nullable = false)
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private List<Payment> payments = new ArrayList<>();
 
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    @ManyToMany(
+            fetch = FetchType.EAGER,
+            cascade = {
+            CascadeType.PERSIST,
+            CascadeType.MERGE
+    })
+    @JoinTable(name = "user_groups",
+            joinColumns =@JoinColumn(name = "customer_id"),
+            inverseJoinColumns = @JoinColumn(name = "group_id"
+            ))
+    private Set<Group> userGroups= new HashSet<>();
+
+    @JsonProperty(value = "roles", access = JsonProperty.Access.READ_ONLY)
+    public List<String> getRoles() {
+        Set<Group> userGroups = this.getUserGroups();
+        List<String> authorities = new ArrayList<>(userGroups.size());
+        userGroups
+                .stream()
+                .sorted()
+                .forEach(userGroup -> authorities.add(userGroup.getCode().toUpperCase()));
+        return authorities;
+    }
+
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return List.of(new SimpleGrantedAuthority(authorities));
+        Set<Group> userGroups = this.getUserGroups();
+        Collection<GrantedAuthority> authorities = new ArrayList<>(userGroups.size());
+
+        for(Group userGroup : userGroups){
+            authorities.add(new SimpleGrantedAuthority(userGroup.getCode().toUpperCase()));
+        }
+
+        return authorities;
     }
 
     @Override
