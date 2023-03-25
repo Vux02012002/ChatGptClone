@@ -1,0 +1,18 @@
+2023-01-30 12:48:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id bigint not null, name varchar(255), password varchar(255), username varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id bigint not null, name varchar(255), password varchar(255), username varchar(255), primary key (id)) [42001-212]
+2023-01-30 12:48:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table user_roles add constraint FK55itppkw3i07do3h7qoclqd4k foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table user_roles add constraint FK55itppkw3i07do3h7qoclqd4k foreign key (user_id) references user [42001-212]
+2023-01-30 12:48:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select user0_.id as col_0_0_ from [*]user user0_ where upper(user0_.username)=upper(?) limit ?"; expected "identifier"; SQL statement:
+select user0_.id as col_0_0_ from user user0_ where upper(user0_.username)=upper(?) limit ? [42001-212]
+2023-01-30 12:49:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (id bigint not null, name varchar(255), password varchar(255), username varchar(255), primary key (id))"; expected "identifier"; SQL statement:
+create table user (id bigint not null, name varchar(255), password varchar(255), username varchar(255), primary key (id)) [42001-212]
+2023-01-30 12:49:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table user_roles add constraint FK55itppkw3i07do3h7qoclqd4k foreign key (user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table user_roles add constraint FK55itppkw3i07do3h7qoclqd4k foreign key (user_id) references user [42001-212]
+2023-01-30 12:49:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select user0_.id as col_0_0_ from [*]user user0_ where upper(user0_.username)=upper(?) limit ?"; expected "identifier"; SQL statement:
+select user0_.id as col_0_0_ from user user0_ where upper(user0_.username)=upper(?) limit ? [42001-212]

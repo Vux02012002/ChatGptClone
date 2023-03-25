@@ -1,0 +1,180 @@
+hyperskill_project:
+  id: 228
+  ide_files: https://stepik.org/media/attachments/lesson/643532/additional_files.json
+  is_template_based: false
+  use_ide: true
+update_date: "Sun, 22 Jan 2023 01:51:37 UTC"
+stages:
+- id: 1141
+  step: 17688
+  is_completed: true
+- id: 1142
+  step: 17689
+  is_completed: true
+- id: 1143
+  step: 17690
+  is_completed: false
+- id: 1144
+  step: 17691
+  is_completed: false
+- id: 1145
+  step: 17692
+  is_completed: false
+- id: 1146
+  step: 17693
+  is_completed: false
+topics:
+  0:
+  - title: "Write, compile, and run"
+    theory_id: 3739
+  - title: "JVM, JRE, and JDK"
+    theory_id: 3499
+  - title: Units of information
+    theory_id: 6865
+  - title: Introduction to Operating systems
+    theory_id: 9704
+  - title: Computer algorithms
+    theory_id: 16547
+  - title: Immutability
+    theory_id: 7929
+  - title: World Wide Web
+    theory_id: 6633
+  - title: HyperText Transfer Protocol
+    theory_id: 6569
+  - title: The big O notation
+    theory_id: 16699
+  - title: "Best, average and worst cases"
+    theory_id: 20084
+  - title: Data structures
+    theory_id: 16927
+  - title: Introduction to Spring Boot
+    theory_id: 7944
+  - title: Getting started with Spring Boot
+    theory_id: 6336
+  - title: HTTP URL
+    theory_id: 6740
+  - title: Basic project structure
+    theory_id: 6339
+  - title: HTTP messages
+    theory_id: 6752
+  - title: Introduction to Spring Web MVC
+    theory_id: 13611
+  - title: Using Spring MVC
+    theory_id: 14409
+  - title: REST
+    theory_id: 7834
+  - title: Postman
+    theory_id: 8512
+  1:
+  - title: IoC Container
+    theory_id: 16851
+  - title: Spring beans
+    theory_id: 14641
+  - title: Spring components
+    theory_id: 14652
+  - title: Insecure Cryptographic Storage
+    theory_id: 20069
+  - title: Spring Security Crypto
+    theory_id: 21866
+  - title: "Web security, OWASP"
+    theory_id: 14755
+  - title: HTTP Basic Auth
+    theory_id: 7778
+  - title: Getting started with Spring Security
+    theory_id: 13856
+  - title: Authentication
+    theory_id: 14353
+  - title: Authorization
+    theory_id: 15269
+  - title: Custom User Store
+    theory_id: 16191
+  - title: OAuth
+    theory_id: 18057
+  - title: What is a bug
+    theory_id: 5504
+  - title: Functional testing
+    theory_id: 13438
+  - title: Unit testing
+    theory_id: 7545
+  - title: Dependency injection
+    theory_id: 20580
+  - title: Interfaces
+    theory_id: 9640
+  - title: XML
+    theory_id: 6901
+  - title: Data and object mapping
+    theory_id: 8262
+  - title: Introduction to logging
+    theory_id: 5538
+  - title: Debugging techniques
+    theory_id: 13775
+  - title: Introduction to API
+    theory_id: 17007
+  - title: Authentication and Authorization
+    theory_id: 14219
+  - title: Abstract class
+    theory_id: 3597
+  2:
+  - title: '@Bean vs @Component'
+    theory_id: 14771
+  - title: ApplicationContext
+    theory_id: 22062
+  - title: Scopes of beans
+    theory_id: 19487
+  - title: Bean lifecycle
+    theory_id: 19550
+  - title: Introduction to Spring Data
+    theory_id: 16299
+  - title: CRUD repositories
+    theory_id: 18031
+  - title: Introduction to JPA
+    theory_id: 17125
+  - title: Relational databases with Spring Data
+    theory_id: 18086
+  - title: Exception handling
+    theory_id: 8780
+  - title: Advanced exception handling in Spring Boot
+    theory_id: 19855
+  - title: Introduction to databases
+    theory_id: 8497
+  - title: Relational Data Model
+    theory_id: 13785
+  - title: What is SQL
+    theory_id: 7054
+  - title: Intro to MySQL
+    theory_id: 16662
+  - title: Object-Relational Mapping (ORM)
+    theory_id: 8312
+  - title: Introduction to PostgreSQL
+    theory_id: 17974
+  - title: Inner classes
+    theory_id: 11505
+  3:
+  - title: H2 database
+    theory_id: 8762
+  - title: Entities
+    theory_id: 18135
+  - title: JPA relationships
+    theory_id: 17787
+  - title: Bean validation
+    theory_id: 9355
+  - title: POST vs. PUT requests
+    theory_id: 13714
+  - title: Basic data types
+    theory_id: 7123
+  - title: Literals
+    theory_id: 7400
+  - title: Arithmetic expressions
+    theory_id: 7409
+  - title: Basic CREATE statement
+    theory_id: 9084
+  - title: The NULL value
+    theory_id: 7907
+  - title: Basic INSERT statement
+    theory_id: 9059
+  - title: Alter table
+    theory_id: 9579
+  - title: PRIMARY KEY constraint
+    theory_id: 9781
+  - title: Consistency constraints
+    theory_id: 9587

@@ -1,0 +1,10 @@
+server:
+  port: 8082
+
+spring:
+  application.name: backend-resources
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://backend-auth:8081
