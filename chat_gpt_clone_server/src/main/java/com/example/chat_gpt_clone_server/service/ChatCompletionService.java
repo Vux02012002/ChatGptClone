@@ -1,6 +1,6 @@
 package com.example.chat_gpt_clone_server.service;
 
-import com.example.chat_gpt_clone_server.dto.request.ChatMessagesRequest;
+import com.example.chat_gpt_clone_server.dto.request.ChatRequest;
 import com.example.chat_gpt_clone_server.dto.response.ContentResponse;
 import com.example.chat_gpt_clone_server.dto.response.Response;
 import com.theokanning.openai.completion.chat.ChatCompletionRequest;
@@ -13,13 +13,13 @@ public class ChatCompletionService {
     @Value("${OPENAI_API_KEY}")
     private String API_KEY;
 
-    public Response getChatCompletion(ChatMessagesRequest messages) {
+    public Response getChatCompletion(ChatRequest request) {
         OpenAiService service = new OpenAiService(API_KEY);
         ChatCompletionRequest chatCompletionRequest = ChatCompletionRequest
                 .builder()
                 .model("gpt-3.5-turbo")
-                .messages(messages.getMessages())
-                .maxTokens(1000)
+                .messages(request.getMessages())
+                .maxTokens(2048)
                 .temperature(0.0)
                 .build();
 

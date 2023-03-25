@@ -6,6 +6,6 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-public class ChatMessagesRequest {
+public class ChatRequest {
     private List<ChatMessage> messages;
 }
